@@ -10,7 +10,6 @@ interface CatPic {
 const RandomPhoto: React.FC = () => {
   const [catPhoto, setCatPhoto] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
-  console.log("Emergency!!!!!!!");
   const fetchCatPhoto = async () => {
     setLoading(true);
     try {
@@ -21,6 +20,7 @@ const RandomPhoto: React.FC = () => {
     } finally {
       setLoading(false);
     }
+    console.log("Emergency!!!!!!!");
   };
 
   useEffect(() => {
